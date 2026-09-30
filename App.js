@@ -1,20 +1,33 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import { StudentScreen } from './src/screens/StudentScreen';
+import { ApiScreen } from './src/screens/ApiScreen';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaProvider>
+      <StatusBar style="light" backgroundColor="#4b1c71" />
+      <NavigationContainer>
+        <Stack.Navigator
+          initialRouteName="StudentScreen"
+          screenOptions={{
+            headerShown: false,
+            contentStyle: { backgroundColor: '#4b1c71' },
+          }}
+        >
+          {/* Pantalla 1: Información del Estudiante */}
+          <Stack.Screen name="StudentScreen" component={StudentScreen} />
+
+          {/* Pantalla 2: Consumo de API */}
+          <Stack.Screen name="ApiScreen" component={ApiScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
