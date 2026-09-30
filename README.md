@@ -12,7 +12,18 @@ Instituto Técnico Ricaldone
 
 ---
 
-## Enlaces de Entrega
+## Enlace del video
 
-- Enlace de video demostrativo: [COLOCAR AQUÍ EL ENLACE PÚBLICO DEL VIDEO (Drive o YouTube)]
-- Enlace para descargar el APK: [COLOCAR AQUÍ EL ENLACE DE DESCARGA DEL APK]
+https://drive.google.com/file/d/1PSL8Fz2t753hkpIqY1mZtVurT0cEIkxH/view?usp=sharing
+
+---
+
+## APK de la Aplicación
+
+https://expo.dev/artifacts/eas/Suprg_WUNx4ayXZCvxbe_iuWw0SY0azx93khWB6Ip98.apk
+
+---
+
+## Repositorio de GitHub
+
+https://github.com/Marm0LdeV/Perfil3_FranciscoMarmol.git
